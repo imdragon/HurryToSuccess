@@ -10,6 +10,7 @@
 
     <style name="prayerTextStyle">
         <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_centerHorizontal">true</item>
     </style>
 
 </resources>

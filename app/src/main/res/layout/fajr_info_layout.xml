@@ -5,36 +5,63 @@
     android:orientation="vertical">
 
     <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/irelanddawn" />
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/irelanddawn"
-        android:scaleType="centerCrop"/>
     <TextView
-        style="@style/prayerTextStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Fajr"
         android:id="@+id/farjTopLabel"
-        android:layout_centerHorizontal="true"/>
-
-    <TextView
         style="@style/prayerTextStyle"
-        android:id="@+id/rakats"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="2 rakats"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/farjTopLabel"/>
+        android:layout_marginTop="42dp"
+        android:text="Fajr"
+        android:textSize="42sp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="Show missed prayers?"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12dp" />
 
     <TextView
+        android:id="@+id/rakats"
         style="@style/prayerTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/farjTopLabel"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:text="2 rakats"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
         android:id="@+id/description"
-        android:layout_below="@id/rakats"
+        style="@style/prayerTextStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/fajr_info"/>
+        android:layout_below="@id/rakats"
+        android:text="@string/fajr_info" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/description">
+
+        <ImageView
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignEnd="@+id/rakats"
+            android:layout_alignRight="@+id/rakats"
+            android:layout_below="@id/description"
+
+            android:src="@drawable/fajr1" />
+    </LinearLayout>
 
 </RelativeLayout>
