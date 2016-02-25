@@ -8,16 +8,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:scaleType="centerCrop"
-        android:src="@drawable/irelanddawn" />
+        android:src="@drawable/noonwater" />
 
     <TextView
-        android:id="@+id/farjTopLabel"
-        style="@style/prayerTextStyle"
+        android:id="@+id/duhrTopLabel"
+        style="@style/prayerTextStyleDark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="42dp"
-        android:text="Fajr"
+        android:text="Duhr"
         android:textSize="42sp" />
 
     <CheckBox
@@ -31,38 +31,36 @@
 
     <TextView
         android:id="@+id/rakats"
-        style="@style/prayerTextStyle"
+        style="@style/prayerTextStyleDark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/farjTopLabel"
+        android:layout_below="@id/duhrTopLabel"
         android:layout_marginBottom="16dp"
         android:layout_marginTop="16dp"
-        android:text="2 rakats"
+        android:text="4 rakats"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
         android:id="@+id/description"
-        style="@style/prayerTextStyle"
+        style="@style/prayerTextStyleDark"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/rakats"
-        android:text="@string/fajr_info" />
+        android:text="@string/duhr_info" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/description">
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/description">-->
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignEnd="@+id/rakats"
-
-            android:layout_alignRight="@+id/rakats"
-            android:layout_below="@id/description"
-            android:layout_marginTop="32dp"
-
-            android:src="@drawable/fajr1" />
-    </LinearLayout>
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignEnd="@+id/rakats"-->
+            <!--android:layout_alignRight="@+id/rakats"-->
+            <!--android:layout_below="@id/description"-->
+            <!--android:layout_marginTop="32dp"-->
+            <!--android:src="@drawable/fajr1" />-->
+    <!--</LinearLayout>-->
 
 </RelativeLayout>

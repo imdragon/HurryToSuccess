@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">HurryToSuccess</string>
     <string name="fajr_info">Here is where you will find all of the information you need for the fajr prayer.</string>
+    <string name="duhr_info">Here is where you will find all of the information you need for the duhr prayer.</string>
+    <string name="asr_info">Here is where you will find all of the information you need for the asr prayer.</string>
+    <string name="maghrib_info">Here is where you will find all of the information you need for the maghrib prayer.</string>
+    <string name="isha_info">Here is where you will find all of the information you need for the isha prayer.</string>
 </resources>
